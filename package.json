@@ -4,14 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run build -ws && npm run dev -w=\"@mymonorepo/my-app\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "workspaces": [
-    "apps/*",
-    "libs/*"
+    
+    "libs/*",
+    "apps/*"
   ],
   "devDependencies": {
     "prettier": "^3.5.3"
